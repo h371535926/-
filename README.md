@@ -16,8 +16,8 @@
   (1)json方式，但是这种方法也有不少坏处，譬如它会抛弃对象的constructor。也就是深拷贝之后，不管这个对象原来的构造函数是什么，在深拷贝之后都会变Object。
 这种方法能正确处理的对象只有 Number, String, Boolean, Array, 扁平对象，即那些能够被 json 直接表示的数据结构。RegExp对象是无法通过这种方式深拷贝。
 也就是说，只有可以转成JSON格式的对象才可以这样用，像function没办法转成JSON
-    ``` 
+``` 
    var obj2 = JSON.parse(JSON.stringify(obj1));
-   ```
+ ```
   (1)json方式
   
