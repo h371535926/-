@@ -19,4 +19,12 @@
 ``` 
    var obj2 = JSON.parse(JSON.stringify(obj1));
  ```
-  
+  （2）递归的简单实现版本
+```
+  function deepClone(obj){
+     let newObj = obj.constructor === Array ? [] : {};  //首先判断传入的对象是数组还是对象
+     for(key in obj){
+        newObj[key] = typeof obj[key] === 'object' ? deepClone(obj[key]) :  obj[key]; //如果是对象以及数组则递归，否则直接赋值
+     }
+     return newObj;
+  }
