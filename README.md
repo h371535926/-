@@ -19,5 +19,4 @@
 ``` 
    var obj2 = JSON.parse(JSON.stringify(obj1));
  ```
-  (1)json方式
   
