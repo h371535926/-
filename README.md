@@ -28,3 +28,5 @@
      }
      return newObj;
   }
+  ```
+### 4.call和apply的异同
