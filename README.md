@@ -30,3 +30,26 @@
   }
   ```
 ### 4.call和apply的异同
+'''
+function func (a,b,c) {}
+func.call(obj, 1,2,3)
+func.call(obj, [1,2,3])
+'''
+    这两个方法其实功能是一样的，都能够改变方法的执行上下文（执行环境）this，将一个对象的方法交给另一个对象来执行，并且是立即执行。
+    默认情况下，this指是调用该方法的对象
+    只是参数不一致，call传递参数的时候，是一个个的传递值的，而apply参数为数组或者类数组。
+ 
+### 5.类数组对象
+    1.通过角标调用，如 array[0]
+    2.长度属性length
+    3.通过 for 循环和forEach方法进行遍历
+```
+ var arrayLike = {
+    0: 'item1',
+    1: 'item2',
+    2: 'item3',
+    length: 3
+  }
+  [].forEach.call(arrayLike, (item) => console.log(item)
+```
+ 
