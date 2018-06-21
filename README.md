@@ -55,4 +55,10 @@ var ary = [].slice.call(arguments);
   }
   [].forEach.call(arrayLike, (item) => console.log(item)
 ```
+### 6.AMD与CMD以及CommonJs的区别
+    AMD的代表是RequireJS,遵循的是依赖前置,异步加载模块，必须要提前加载所有的依赖
+    CMD的代表是SeaJS,遵循的规范是依赖就近,延迟执行，通过按需加载的方式
+    CommonJs主要用与服务器端，nodejs等，是同步的，只有加载完成后才能执行后面的操作.
+    commonJS是运行时加载,ES6模块化是编译时加载.
+    
  
