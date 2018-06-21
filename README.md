@@ -33,7 +33,10 @@
 ```
 function func (a,b,c) {}
 func.call(obj, 1,2,3)
-func.call(obj, [1,2,3])
+//求数组的最大值
+var max = Math.max.apply(null, ary); 
+//类数组转为数组
+var ary = [].slice.call(arguments);
 ```
     这两个方法其实功能是一样的，都能够改变方法的执行上下文（执行环境）this，将一个对象的方法交给另一个对象来执行，并且是立即执行。
     默认情况下，this指是调用该方法的对象
