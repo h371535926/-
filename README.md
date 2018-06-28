@@ -60,5 +60,11 @@ var ary = [].slice.call(arguments);
     CMD的代表是SeaJS,遵循的规范是依赖就近,延迟执行，通过按需加载的方式
     CommonJs主要用与服务器端，nodejs等，是同步的，只有加载完成后才能执行后面的操作.
     commonJS是运行时加载,ES6模块化是编译时加载.
+### 7.关于this
+    在《javaScript语言精粹》这本书中，把 this 出现的场景分为四类，简单的说就是：
+    有对象就指向调用对象
+    没调用对象就指向全局对象
+    用new构造就指向新对象
+    通过 apply 或 call 或 bind 来改变 this 的所指。
     
  
