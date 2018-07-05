@@ -66,5 +66,6 @@ var ary = [].slice.call(arguments);
     没调用对象就指向全局对象
     用new构造就指向新对象
     通过 apply 或 call 或 bind 来改变 this 的所指。
-    
+### 7.为什么canvas明明高度设置的是父元素的同等高度，就是有滚动条呢？
+    原来canvas设置了行内块级元素,inline-block的元素之间会存在“4px”的空白间距,这里只要设置父元素的font-size为0就可以了。然后重置子元素的fontsize.
  
