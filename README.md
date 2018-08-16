@@ -155,4 +155,6 @@ var ary = [].slice.call(arguments);
     404——资源未找到
     500——服务器内部错误
     503——服务不可用
-    
+### 12.如何用原生js实现页面节点拖拽.
+    1.用onmousedown鼠标按下记录当前offsetX，offsetY，onmousemove鼠标移动到元素上时触发，记录当前的pageX,pageY，计算出移动的距离即可。最后           onmouseup鼠标离开
+    2.同理可以用ondragstart,ondrag，ondragend.
